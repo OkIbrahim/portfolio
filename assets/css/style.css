@@ -902,3 +902,9 @@ textarea:focus {
 .footer-link:hover {
   border-bottom: 3px solid purple;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
