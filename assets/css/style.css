@@ -497,8 +497,8 @@
 .certifications-gallery {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  gap: 12rem;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 14rem;
 
   @media only screen and (max-width: 50em) {
     margin-top: 3rem;
@@ -507,7 +507,7 @@
 
 .html-css,
 .advaced-css-sass {
-  padding: 2.5rem 4rem;
+  padding: 2.5rem 3rem;
   border-radius: 2rem;
   background-color: #0f0715;
   display: flex;
@@ -916,3 +916,4 @@ html::-webkit-scrollbar {
 body::-webkit-scrollbar {
   display: none;
 }
+
