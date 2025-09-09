@@ -13,10 +13,12 @@
 .hero-text h2 {
   font-size: 4.5rem;
   color: #eee;
+  text-align: center;
 }
 
 .hero-text h1 {
   font-size: 5.5rem;
+  text-align: center;
   background-image: linear-gradient(180deg, red, blue);
   color: transparent;
   background-clip: text;
@@ -971,6 +973,7 @@ body {
     overflow-x: hidden !important;
   }
 }
+
 
 
 
