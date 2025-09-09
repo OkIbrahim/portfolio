@@ -4,6 +4,7 @@
   gap: 6rem;
   align-content: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .hero-text > * {
@@ -125,6 +126,7 @@
 .section-services {
   padding: 8rem 0;
   background-color: #000;
+  overflow-x: hidden;
 
   @media only screen and (max-width: 68.75em) {
     padding: 4.5rem 0;
@@ -289,7 +291,7 @@
 .works-gallery {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
   gap: 6rem;
   align-content: center;
   justify-content: center;
@@ -908,3 +910,4 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
