@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #8750f7 #2a1454;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: 56.25em) {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: #fff;
+
+  @media only screen and (max-width: 56.25em) {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  max-width: 125rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9rem;
+  padding: 0 3rem;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @media only screen and (max-width: 75em) {
+    gap: 1rem;
+  }
+}
+
+.header-logo {
+  height: 8rem;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.header-anchor {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  @media only screen and (max-width: 75em) {
+    gap: 1.5rem;
+  }
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-image: linear-gradient(to right, red, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+.main-nav-link:hover {
+  border-bottom: 3px solid purple;
+}
+
+.main-nav-cta:link,
+.main-nav-cta:visited {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.4rem 2rem;
+  border-radius: 50px;
+  background-size: 200%;
+  background-image: linear-gradient(
+    to right,
+    #8750f7 0%,
+    #2a1454 51%,
+    #8750f7 100%
+  );
+  transition: all 0.4s;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.8rem 1.3rem;
+  }
+}
+
+.main-nav-cta:hover {
+  background-size: 200%;
+  background-image: linear-gradient(
+    to left,
+    #8750f7 0%,
+    #2a1454 51%,
+    #8750f7 100%
+  );
+  background-position: -100% center;
+}
