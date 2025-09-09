@@ -74,4 +74,8 @@ allLinks.forEach(function (link) {
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
   });
+
+  if (link.classList.contains("main-nav-cta"))
+      headerEl.classList.toggle("nav-open");
 });
+
