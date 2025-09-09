@@ -86,6 +86,10 @@
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
+
+  @media only screen and (max-width: 75em) {
+    max-width: 100%;
+  }
 }
 
 .hero-text .cv {
@@ -916,6 +920,35 @@ html::-webkit-scrollbar {
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* --- FIX GRID MIN WIDTHS FOR MOBILE --- */
+@media only screen and (max-width: 37.5em) { /* ~600px */
+  .hero {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+
+  .works-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-setup {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- FIX HUGE GAPS ON SMALL SCREENS --- */
+@media only screen and (max-width: 37.5em) {
+  .offer-1,
+  .offer-2 {
+    gap: 2rem; /* much smaller gap for mobile */
+    flex-direction: column; /* stack vertically */
+  }
+}
+
 
 
 
