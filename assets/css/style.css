@@ -289,7 +289,7 @@
 .works-gallery {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
   gap: 6rem;
   align-content: center;
   justify-content: center;
@@ -502,7 +502,6 @@
 
   @media only screen and (max-width: 50em) {
     margin-top: 3rem;
-    gap: 6rem;
   }
 }
 
@@ -917,6 +916,7 @@ html::-webkit-scrollbar {
 body::-webkit-scrollbar {
   display: none;
 }
+
 
 
 
