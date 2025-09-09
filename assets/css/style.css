@@ -82,22 +82,6 @@
   outline-offset: 0.4rem;
 }
 
-.hero-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tunji {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-
-  @media only screen and (max-width: 75em) {
-    max-width: 100%;
-  }
-}
-
 .hero-text .cv {
   display: flex;
   gap: 14rem;
