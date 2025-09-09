@@ -54,6 +54,19 @@ backToTop.addEventListener("click", () => {
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
+    if (href.startsWith("tel:") || href.startsWith("mailto:")) {
+      return; // Let the browser handle it
+    }
+
+    // 🌍 Handle external links (http/https)
+    if (href.startsWith("http")) {
+      // Check if it's NOT your own site
+      if (!href.includes(window.location.hostname)) {
+        link.setAttribute("target", "_blank"); // open in new tab
+        link.setAttribute("rel", "noopener noreferrer"); // security
+        return;
+      }
+    }
     e.preventDefault();
     const href = link.getAttribute("href");
 
@@ -78,6 +91,7 @@ allLinks.forEach(function (link) {
     {headerEl.classList.toggle("nav-open");}
   });
 });
+
 
 
 
