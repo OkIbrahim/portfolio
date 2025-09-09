@@ -35,7 +35,7 @@ body {
 .container {
   max-width: 125rem;
   margin: 5rem auto;
-  padding: 0 3rem;
+  padding: 0 2.5rem;
 }
 
 .header {
@@ -146,4 +146,5 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 
