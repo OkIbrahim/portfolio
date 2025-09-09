@@ -84,11 +84,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  flex-wrap: wrap;
 
   @media only screen and (max-width: 75em) {
     gap: 1.5rem;
-    flex-wrap: wrap;
   }
 }
 
