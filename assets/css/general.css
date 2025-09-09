@@ -36,7 +36,6 @@ body {
   max-width: 125rem;
   margin: 5rem auto;
   padding: 0 3rem;
-  overflow-x: hidden;
 }
 
 .header {
@@ -47,7 +46,6 @@ body {
   justify-content: space-between;
   height: 9rem;
   padding: 0 3rem;
-  overflow-x: hidden;
 
   @media only screen and (max-width: 75em) {
     font-size: 2rem;
@@ -148,3 +146,4 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
