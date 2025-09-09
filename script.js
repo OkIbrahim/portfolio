@@ -79,6 +79,8 @@ allLinks.forEach(function (link) {
   });
 });
 
+document.body.style.overflowX = 'hidden';
+
 
 
 
