@@ -1,4 +1,8 @@
-
+// Close mobile navigation
+    if (link.classList.contains("main-nav-cta"))
+    {headerEl.classList.toggle("nav-open");}
+if (link.classList.contains("main-nav-link"))
+    {headerEl.classList.toggle("nav-open");}
 
 // Sticky navigation
 
@@ -73,9 +77,7 @@ allLinks.forEach(function (link) {
       }
     }
 
-  
-    if (link.classList.contains("main-nav-link"))
-    {headerEl.classList.toggle("nav-open");}
+    
     e.preventDefault();
     const href = link.getAttribute("href");
 
@@ -91,9 +93,7 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-// Close mobile navigation
-    if (link.classList.contains("main-nav-cta"))
-    {headerEl.classList.toggle("nav-open");}
+
     
   });
 });
