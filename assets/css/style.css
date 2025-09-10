@@ -82,6 +82,22 @@
   outline-offset: 0.4rem;
 }
 
+.hero-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tunji {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+  @media only screen and (max-width: 75em) {
+    max-width: 100%;
+  }
+}
+
 .hero-text .cv {
   display: flex;
   gap: 14rem;
@@ -150,6 +166,10 @@
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 28.75em) {
+    font-size: 3.5rem;
+  }
 }
 
 .section-subheading {
@@ -611,16 +631,28 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 700;
   line-height: 1.6;
   margin-bottom: 1.2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (max-width: 28.75em) {
+    font-size: 3rem;
+  }
 }
 
 .contact-subheading {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 2.5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.7rem;
+  }
 }
 
 input[type="text"],
@@ -907,20 +939,14 @@ textarea:focus {
 
 html,
 body {
+  width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-html::-webkit-scrollbar {
-  display: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 /* --- FIX GRID MIN WIDTHS FOR MOBILE --- */
-@media only screen and (max-width: 37.5em) { /* ~600px */
+@media only screen and (max-width: 37.5em) {
+  /* ~600px */
   .hero {
     grid-template-columns: 1fr; /* single column on small screens */
   }
@@ -949,18 +975,13 @@ body::-webkit-scrollbar {
 
 html,
 body {
+  width: 100% !important;
   max-width: 100% !important;
   overflow-x: hidden !important;
 
   @media only screen and (max-width: 37.5em) {
+    width: 100% !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
   }
 }
-
-
-
-
-
-
-
