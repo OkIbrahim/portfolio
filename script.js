@@ -60,6 +60,11 @@ allLinks.forEach(function (link) {
       return; // Let the browser handle it
     }
 
+// Close mobile navigation
+    if (link.classList.contains("main-nav-cta"))
+    {headerEl.classList.toggle("nav-open");}
+  
+
     // 🌍 Handle external links (http/https)
     if (href.startsWith("http")) {
       // Check if it's NOT your own site
@@ -70,10 +75,7 @@ allLinks.forEach(function (link) {
       }
     }
 
-// Close mobile navigation
-    if (link.classList.contains("main-nav-cta"))
-    {headerEl.classList.toggle("nav-open");}
-    
+  
     if (link.classList.contains("main-nav-link"))
     {headerEl.classList.toggle("nav-open");}
     e.preventDefault();
