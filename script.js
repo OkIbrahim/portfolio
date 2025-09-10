@@ -1,10 +1,4 @@
-// Make mobile navigation work
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
 
 // Sticky navigation
 
@@ -48,6 +42,14 @@ backToTop.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+// Make mobile navigation work
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
 });
 
 // Smooth scrolling animation
