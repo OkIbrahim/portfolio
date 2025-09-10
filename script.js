@@ -60,9 +60,7 @@ allLinks.forEach(function (link) {
       return; // Let the browser handle it
     }
 
-// Close mobile navigation
-    if (link.classList.contains("main-nav-cta"))
-    {headerEl.classList.toggle("nav-open");}
+
   
 
     // 🌍 Handle external links (http/https)
@@ -93,7 +91,9 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-
+// Close mobile navigation
+    if (link.classList.contains("main-nav-cta"))
+    {headerEl.classList.toggle("nav-open");}
     
   });
 });
