@@ -4,7 +4,6 @@
   gap: 6rem;
   align-content: center;
   justify-content: center;
-overflow-x: hidden;
 }
 
 .hero-text > * {
@@ -89,16 +88,6 @@ overflow-x: hidden;
   justify-content: center;
 }
 
-.tunji {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-
-  @media only screen and (max-width: 75em) {
-    max-width: 100%;
-  }
-}
-
 .hero-text .cv {
   display: flex;
   gap: 14rem;
@@ -144,21 +133,17 @@ overflow-x: hidden;
 .section-services {
   padding: 8rem 0;
   background-color: #000;
-overflow-x: hidden;
 
   @media only screen and (max-width: 68.75em) {
     padding: 4.5rem 0;
-overflow-x: hidden;
   }
 
   @media only screen and (max-width: 50em) {
     padding: 3rem 0;
-overflow-x: hidden;
   }
 
   @media only screen and (max-width: 37.5em) {
     padding: 1.5rem 0;
-overflow-x: hidden;
   }
 }
 
@@ -171,11 +156,9 @@ overflow-x: hidden;
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 2rem;
-overflow-x: hidden;
 
   @media only screen and (max-width: 28.75em) {
     font-size: 3.5rem;
-overflow-x: hidden;
   }
 }
 
@@ -301,21 +284,17 @@ overflow-x: hidden;
 .section-works {
   padding: 7rem 0;
   background-color: #0b0416;
-overflow-x: hidden;
 
   @media only screen and (max-width: 68.75em) {
     padding: 3.5rem 0;
-overflow-x: hidden;
   }
 
   @media only screen and (max-width: 50em) {
     padding: 3rem 0;
-overflow-x: hidden;
   }
 
   @media only screen and (max-width: 37.5em) {
     padding: 1rem 0;
-overflow-x: hidden;
   }
 }
 
@@ -512,7 +491,6 @@ overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 999;
   box-shadow: 0 0.4rem 0.8rem #2a1454;
-overflow-x: hidden;
 }
 
 .sticky .hero {
@@ -522,11 +500,9 @@ overflow-x: hidden;
 .section-resume {
   padding: 6rem 0;
   background-color: #000;
-overflow-x: hidden;
 
   @media only screen and (max-width: 50em) {
     padding: 2rem 0;
-overflow-x: hidden;
   }
 }
 
@@ -593,7 +569,6 @@ overflow-x: hidden;
 .section-skills {
   padding: 6rem 0;
   background-color: #0f0715;
-overflow-x: hidden;
 }
 
 .skills-gallery {
@@ -627,7 +602,6 @@ overflow-x: hidden;
 .section-contact {
   padding: 7rem 0;
   background-color: #000;
-overflow-x: hidden;
 }
 
 .contact-setup {
@@ -903,11 +877,9 @@ textarea:focus {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-overflow-x: hidden;
 
   @media only screen and (max-width: 56.25em) {
     padding: 5rem 0;
-overflow-x: hidden;
   }
 }
 
@@ -955,13 +927,6 @@ overflow-x: hidden;
   border-bottom: 3px solid purple;
 }
 
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 /* --- FIX GRID MIN WIDTHS FOR MOBILE --- */
 @media only screen and (max-width: 37.5em) {
   /* ~600px */
@@ -991,15 +956,3 @@ body {
   }
 }
 
-html,
-body {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-
-  @media only screen and (max-width: 37.5em) {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
-}
