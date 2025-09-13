@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #8750f7 #2a1454;
+overflow-x: hidden;
 }
 
 html {
@@ -34,19 +35,17 @@ body {
   @media only screen and (max-width: 56.25em) {
     overflow-x: hidden;
   }
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
+}
 
 .container {
   max-width: 125rem;
   margin: 5rem auto;
   padding: 0 2.5rem;
+overflow-x: hidden;
 
   @media only screen and (max-width: 75em) {
     max-width: 100%;
+overflow-x: hidden;
   }
 }
 
@@ -58,10 +57,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   height: 9rem;
   padding: 0 3rem;
+overflow-x: hidden;
 
   @media only screen and (max-width: 75em) {
     font-size: 2rem;
     padding: 0 1.5rem;
+overflow-x: hidden;
   }
 }
 
@@ -93,10 +94,12 @@ body::-webkit-scrollbar {
   justify-content: center;
   gap: 2.5rem;
   flex-wrap: wrap;
+overflow-x: hidden;
 
   @media only screen and (max-width: 75em) {
     gap: 1.5rem;
     flex-wrap: wrap;
+overflow-x: hidden;
   }
 }
 
@@ -110,10 +113,12 @@ body::-webkit-scrollbar {
   -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.2s;
+overflow-x: hidden;
 
   @media only screen and (max-width: 75em) {
     font-size: 1.8rem;
     font-weight: 500;
+overflow-x: hidden;
   }
 }
 
@@ -136,12 +141,14 @@ body::-webkit-scrollbar {
     #2a1454 51%,
     #8750f7 100%
   );
+overflow-x: hidden;
   transition: all 0.4s;
 
   @media only screen and (max-width: 75em) {
     font-size: 1.8rem;
     font-weight: 500;
     padding: 0.8rem 1.3rem;
+overflow-x: hidden;
   }
 }
 
