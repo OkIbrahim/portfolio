@@ -11,7 +11,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1;
   font-weight: 400;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
   color: #fff;
 }
 
